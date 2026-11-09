@@ -1,18 +1,19 @@
 name: Benchmark cache restore
 
-on:
-  workflow_dispatch:
-    inputs:
-      baseline-ref:
-        description: Git ref containing the sequential restore implementation
-        required: true
-        default: main
-        type: string
-      candidate-ref:
-        description: Git ref containing the concurrent restore implementation (defaults to the dispatched ref)
-        required: false
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       baseline-ref:
+#         description: Git ref containing the sequential restore implementation
+#         required: true
+#         default: main
+#         type: string
+#       candidate-ref:
+#         description: Git ref containing the concurrent restore implementation (defaults to the dispatched ref)
+#         required: false
+#         type: string
+# 
 permissions:
   contents: read
 
